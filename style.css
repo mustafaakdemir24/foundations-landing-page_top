@@ -115,11 +115,6 @@ body {
 
 /* End of Hero --> Content section */
 
-.info {
-  height: 25.5vh;
-  background: #fff;
-}
-
 .quote {
   height: 23vh;
   background: #e5e7eb;
@@ -133,4 +128,32 @@ body {
 .footer {
   height: 5.5vh;
   background: #1f2937;
+}
+
+/* ---------------------------- info section ----------------------- */
+
+.info {
+  display: flex;
+  background: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 90px;
+}
+
+.info h2 {
+  margin: 30px 0;
+}
+
+.box-container {
+  display: flex;
+  gap: 40px;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  border: 2px solid #3882f6;
+  gap: 5;
+  border-radius: 10px;
 }
