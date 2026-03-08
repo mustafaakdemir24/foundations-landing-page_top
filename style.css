@@ -134,26 +134,49 @@ body {
 
 .info {
   display: flex;
-  background: #fff;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding-bottom: 90px;
+  background: #fff;
+  padding-bottom: 4rem 10rem;
+  gap: 2.5rem;
 }
 
 .info h2 {
-  margin: 30px 0;
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+  padding: 4rem 0 0;
 }
 
-.box-container {
+.info-cards {
   display: flex;
   gap: 40px;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
 }
 
-.box {
-  height: 100px;
-  width: 100px;
-  border: 2px solid #3882f6;
-  gap: 5;
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+  max-width: 100px;
+}
+
+.card .card-image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border: 3px solid #3882f6;
   border-radius: 10px;
+  background: #fff;
+}
+
+.card p {
+  font-size: 0.875rem;
+  padding: 0 0 10rem;
+  text-align: center;
+  color: #6b7280;
+  line-height: 1.5;
 }
