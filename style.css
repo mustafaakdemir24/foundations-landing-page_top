@@ -115,11 +115,6 @@ body {
 
 /* End of Hero --> Content section */
 
-.cta {
-  height: 18vh;
-  background: #fff;
-}
-
 .footer {
   height: 5.5vh;
   background: #1f2937;
@@ -200,4 +195,37 @@ body {
   font-size: 1rem;
   font-weight: 700;
   color: #1f2937;
+}
+
+/* ------------------------------- Call to Action Section ------------------------- */
+.cta {
+  display: flex;
+  background: #fff;
+  padding: 2rem 14rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta .box {
+  display: flex;
+  background: #3882f6;
+  color: #fff;
+  padding: 2rem 6rem;
+  gap: 10rem;
+}
+
+.cta .text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cta button {
+  background: #3882f6;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  align-self: center;
+  cursor: pointer;
 }
