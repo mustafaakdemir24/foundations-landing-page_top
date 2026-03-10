@@ -115,11 +115,6 @@ body {
 
 /* End of Hero --> Content section */
 
-.quote {
-  height: 23vh;
-  background: #e5e7eb;
-}
-
 .cta {
   height: 18vh;
   background: #fff;
@@ -179,4 +174,30 @@ body {
   text-align: center;
   color: #6b7280;
   line-height: 1.5;
+}
+
+/* -------------------------------Quete Section ------------------------- */
+.quote {
+  display: flex;
+  flex-direction: column; /* stack quote text above attribution */
+  justify-content: center; /* vertical centering within section */
+  align-items: flex-start; /* keep text left-aligned inside the box */
+  padding: 5rem 16rem;
+  background: #e5e7eb;
+  gap: 1.25rem;
+}
+
+.quote blockquote {
+  font-size: 1.75rem;
+  font-style: italic;
+  font-weight: 400;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+.quote .attribution {
+  align-self: flex-end;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1f2937;
 }
