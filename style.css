@@ -127,7 +127,7 @@ body {
   flex-direction: column;
   align-items: center;
   background: #fff;
-  padding-bottom: 4rem 10rem;
+  padding: 1rem 4rem;
   gap: 2.5rem;
 }
 
@@ -165,7 +165,7 @@ body {
 
 .card p {
   font-size: 0.875rem;
-  padding: 0 0 10rem;
+  padding: 0 0 5rem;
   text-align: center;
   color: #6b7280;
   line-height: 1.5;
@@ -208,24 +208,53 @@ body {
 
 .cta .box {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #3882f6;
   color: #fff;
-  padding: 2rem 6rem;
-  gap: 10rem;
+  padding: 2rem 5rem;
+  gap: 4rem;
+  border-radius: 10px;
 }
 
-.cta .text-content {
+.cta .cta-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 0.4rem;
+}
+
+.cta-text h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.cta-text p {
+  font-size: 0.95rem;
+  color: #e8eaff;
+  line-height: 1.5;
 }
 
 .cta button {
-  background: #3882f6;
+  flex-shrink: 0;
+  background: transparent;
   color: #fff;
   border: 2px solid #fff;
   padding: 8px 20px;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
   align-self: center;
   cursor: pointer;
+  transition:
+    background 0.2s color 0.2s,
+    border-color 0.2s;
+}
+
+.cta button:hover {
+  background: #fff;
+  color: #3882f6;
+  border-color: #fff;
 }
