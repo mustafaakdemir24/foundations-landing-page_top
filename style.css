@@ -115,11 +115,6 @@ body {
 
 /* End of Hero --> Content section */
 
-.cta {
-  height: 18vh;
-  background: #fff;
-}
-
 .footer {
   height: 5.5vh;
   background: #1f2937;
@@ -132,7 +127,7 @@ body {
   flex-direction: column;
   align-items: center;
   background: #fff;
-  padding-bottom: 4rem 10rem;
+  padding: 1rem 4rem;
   gap: 2.5rem;
 }
 
@@ -170,7 +165,7 @@ body {
 
 .card p {
   font-size: 0.875rem;
-  padding: 0 0 10rem;
+  padding: 0 0 5rem;
   text-align: center;
   color: #6b7280;
   line-height: 1.5;
@@ -200,4 +195,66 @@ body {
   font-size: 1rem;
   font-weight: 700;
   color: #1f2937;
+}
+
+/* ------------------------------- Call to Action Section ------------------------- */
+.cta {
+  display: flex;
+  background: #fff;
+  padding: 2rem 14rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #3882f6;
+  color: #fff;
+  padding: 2rem 5rem;
+  gap: 4rem;
+  border-radius: 10px;
+}
+
+.cta .cta-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+
+.cta-text h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.cta-text p {
+  font-size: 0.95rem;
+  color: #e8eaff;
+  line-height: 1.5;
+}
+
+.cta button {
+  flex-shrink: 0;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: center;
+  cursor: pointer;
+  transition:
+    background 0.2s color 0.2s,
+    border-color 0.2s;
+}
+
+.cta button:hover {
+  background: #fff;
+  color: #3882f6;
+  border-color: #fff;
 }
